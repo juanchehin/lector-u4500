@@ -2,3 +2,4 @@ C# con WinForm el Lector Digital Persona U are U 4500 para registrar huella y gu
 
 También la manera de recuperar el registro para saber que persona se ha identificado.
 
+https://www.youtube.com/watch?v=FaT_ZOKF4hU&t=0s
