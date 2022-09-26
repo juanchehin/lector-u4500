@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -88,7 +89,25 @@ namespace DemoDP4500
                 };
 
                 contexto.Empleadoes.Add(empleado);
-                contexto.SaveChanges();
+                //contexto.SaveChanges();
+
+                using (SqlConnection openCon = new SqlConnection(@"data source=DESKTOP-9BKC47G\SQLEXPRESS;initial catalog=UsuariosDB;integrated security=True"))
+                {
+                    string saveStaff = "INSERT into Empleado (Nombre,Huella) VALUES (@Nombre,@Huella)";
+
+                    using (SqlCommand querySaveStaff = new SqlCommand(saveStaff))
+                    {
+                        querySaveStaff.Connection = openCon;
+                        //querySaveStaff.Parameters.Add("@Id", SqlDbType.Int, 30).Value = '1';
+                        querySaveStaff.Parameters.Add("@Nombre", SqlDbType.VarChar, 50).Value = empleado.Nombre;
+                        querySaveStaff.Parameters.Add("@Huella", SqlDbType.VarBinary, 50).Value = empleado.Huella;
+                        
+                        openCon.Open();
+
+                        querySaveStaff.ExecuteNonQuery();
+                    }
+                }
+
                 MessageBox.Show("Registro agregado a la BD correctamente");
                 Limpiar();
                 Listar();
