@@ -15,8 +15,7 @@ namespace DemoDP4500
     
     public partial class UsuariosDBEntities : DbContext
     {
-        public UsuariosDBEntities()
-            : base("name=UsuariosDBEntities")
+        public UsuariosDBEntities() : base("name=UsuariosDBEntities")
         {
         }
     

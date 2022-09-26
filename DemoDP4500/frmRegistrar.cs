@@ -100,7 +100,7 @@ namespace DemoDP4500
                         querySaveStaff.Connection = openCon;
                         //querySaveStaff.Parameters.Add("@Id", SqlDbType.Int, 30).Value = '1';
                         querySaveStaff.Parameters.Add("@Nombre", SqlDbType.VarChar, 50).Value = empleado.Nombre;
-                        querySaveStaff.Parameters.Add("@Huella", SqlDbType.VarBinary, 50).Value = empleado.Huella;
+                        querySaveStaff.Parameters.Add("@Huella", SqlDbType.VarBinary, 1632).Value = empleado.Huella;
                         
                         openCon.Open();
 
