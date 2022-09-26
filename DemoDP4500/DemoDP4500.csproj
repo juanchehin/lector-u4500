@@ -46,13 +46,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPEngNET.dll</HintPath>
     </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <HintPath>..\packages\DigitalPersona.0.0.0.1\lib\DPFPGuiNET.dll</HintPath>
+    </Reference>
     <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPShrNET.dll</HintPath>
+      <HintPath>..\packages\DigitalPersona.0.0.0.1\lib\DPFPShrNET.dll</HintPath>
     </Reference>
     <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files\DigitalPersona\One Touch SDK\.NET\Bin\DPFPVerNET.dll</HintPath>
+      <HintPath>..\packages\DigitalPersona.0.0.0.1\lib\DPFPVerNET.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
